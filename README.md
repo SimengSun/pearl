@@ -1,7 +1,7 @@
 # PEARL
 
 This is the repository for our paper "Prompting Large Language Models to
-Plan and Execute Actions Over Long Documen".
+Plan and Execute Actions Over Long Documents".
 
 # Pipeline
 ![](figures/pearl.png)

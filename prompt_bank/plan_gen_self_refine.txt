@@ -1,0 +1,146 @@
+[Actions]
+ANALYZE(CTX, X, Y) # Analyze the relationship, attitude, or feelings between X and Y, or the character, language, tone, or symbolism of X given the input CTX.
+COMPARE(CTX, X, Y, Z) # Compare X and Y in the context of Z, considering aspects such as abilities, assets, attractiveness, behavior, concerns, contributions, cultures, events, experiences, feelings, focus, intelligence, irony, nationalities, performance, praise, reactions, reviews, secretiveness, time periods, treatment, truth, or worlds given the input CTX.
+COMPREHEND(CTX, X) # Provide a detailed comprehension of X given the input CTX.
+CONCAT(S1, S2, ...)
+DEFINE(CTX, X) # Provide the definition of X given the input CTX.
+DESCRIBE(CTX, X, Y) # Provide a description of X in terms of Y, such as character, genre, or introduction given the input CTX.
+EVALUATE(CTX, X, Y) # Evaluate aspects such as feeling, outcome, performance, personalities, risk, or truth of X in relation to Y given the input CTX.
+EXCEPT(CTX, LIST) # Find the item that is not mentioned in the input CTX but is present in the given LIST.
+EXPLAIN_PROCESS(CTX, X) # Provide a detailed explanation of the process X given the input CTX.
+FIND_BARRIERS_CAUSES(CTX, X) # Find and summarize the remaining barriers or causes related to X given the input CTX.
+FIND_BEHAVIOR_REASON(CTX, X) # Find the reason behind the behavior X given the input CTX.
+FIND_BENEFIT(CTX, X) # Find the direct benefit of X given the input CTX.
+FIND_BEST(CTX, X, Y) # Find the best X in the context of Y given the input CTX.
+FIND_CHARACTER(CTX, X) # Find and summarize the character traits, transformation, and changes of X given the input CTX.
+FIND_COMMON(CTX, X, Y, Z) # Find the common ground, characteristics, or commonalities between X, Y, and Z given the input CTX.
+FIND_CONDITION(CTX, X, Y) # Find the condition, outcome, or consequences related to X and Y given the input CTX.
+FIND_CONFLICT_CONCERN(CTX, X, Y) # Find the conflict, concern, or disagreement between X and Y given the input CTX.
+FIND_CONSISTENCY(CTX, X) # Determine if X is consistent throughout the input CTX.
+FIND_DECISION(CTX, X) # Find the decision, factor, or event that influenced X's decision in the input CTX.
+FIND_DESCRIPTION(CTX, X) # Find all descriptions, characteristics, or words that describe X given the input CTX.
+FIND_DETAILS(CTX) # Find all the details about a topic (e.g., contract, city-state) discussed in the input CTX.
+FIND_DIALOGUE(CTX, X, Y) # Find the dialogue between X and Y in the input CTX.
+FIND_DIFFICULTY_DANGER(CTX, X) # Find the most difficult aspect, challenge, or danger faced by X in the given input CTX.
+FIND_ELEMENT(CTX, X, Y) # Find the element X related to Y given the input CTX. This function can cover message, method, metrics, mismatch, mission, mistake, most likely, motif, motivation, nationalities, negative critique, negative effect, next event, normal, objective, obstacles, outcome, outlier, paradox, part, perception, personality traits, perspective, pivotal decision, plan, plausible explanations, plot, prediction, probable cause, promises, proof, protagonist, purpose, qualities, rank, reaction, reasons reception, recommendations, relation, repercussion results, role representation, sentiment thoughts, setting effect, significance, similarity, solution struggles, theme symbolism, tech advancements, tension tone, traits values, unexpected, and writing style, etc.
+FIND_EMOTION(CTX, X, Y) # Find the emotion or feeling X feels towards Y given the input CTX.
+FIND_ENDING(CTX, X) # Find the ending or conclusion of X's story or the input CTX.
+FIND_EVENT(CTX, X) # Find the event involving X in the input CTX (e.g., betrayal, change, climax).
+FIND_EVIDENCE_EXAMPLE(CTX, X) # Find evidence or an example supporting X given the input CTX.
+FIND_EXCEPTION(CTX, X, Y, Z) # Find the exception or characteristic that is not common among X, Y, and Z given the input CTX.
+FIND_EXPECTATION(CTX, X) # Find the expectation, assumption, or impact about X given the input CTX.
+FIND_EXPLANATION(CTX, X) # Find the most likely explanation, critique, or doubt for X given the input CTX.
+FIND_FACT_FALSE(CTX, X) # Find a definite fact or false statement about X given the input CTX.
+FIND_FEARS_DISTRACTIONS(CTX, X) # Find the fears, concerns, or distractions of X given the input CTX.
+FIND_FEATURES(CTX, X) # Find all the features that X cares about given the input CTX.
+FIND_FIRST_INSTANCE(CTX, X) # Find the first instance of X happening in the input CTX.
+FIND_FLAW(CTX, X) # Find the greatest flaw of X given the input CTX.
+FIND_FOCUS(CTX, X) # Find the person or object that is focused on the most in the input CTX, given a list of X.
+FIND_FORESHADOW(CTX, X, Y) # Find the instance where X foreshadows Y in the input CTX.
+FIND_FUTURE(CTX, X) # Find the future, predicted outcome, or action of X given the input CTX.
+FIND_GRIEVANCE(CTX, X) # Find and summarize the grievance X has against something or someone in the input CTX.
+FIND_HALO_EFFECT(CTX, X) # Find and summarize one halo effect of X given the input CTX.
+FIND_HUMBLENESS(CTX, X) # Find the instances of humbleness presented by X in the input CTX.
+FIND_HYPOTHETICAL(CTX, X) # Find the hypothetical outcome or consequence of X given input CTX.
+FIND_IMAGINATION(CTX, X) # Find and summarize how X imagines something in the input CTX.
+FIND_IMPACT(CTX, X, Y) # Find the event or experience that had the strongest impact on X's Y given the input CTX.
+FIND_IMPACTS(CTX, X) # Find and summarize all the impacts of X given the input CTX.
+FIND_IMPLICATIONS(CTX, X) # Find the potentially negative implications of X given the input CTX.
+FIND_IMPLICIT_PROMISE(CTX, X, Y) # Find the promise made by X to Y without explicitly stating it in the input CTX.
+FIND_IMPORTANCE(CTX, X, Y) # Find the importance of X in relation to Y given the input CTX.
+FIND_IMPRESSION(CTX, X, Y) # Find the impression X has about Y given the input CTX.
+FIND_IMPROVEMENT(CTX, X) # Find the suggested improvement for X given the input CTX.
+FIND_INCORRECT(CTX, X) # Find the incorrect information about X given the input CTX.
+FIND_INDICATION(CTX, X, Y) # Find any indications in the input CTX that X would lead to Y.
+FIND_INDICATORS(CTX, X) # Find all indicators related to X in the input CTX.
+FIND_INSTANCE(CTX, X, Y) # Find the instance in the input CTX where X does Y.
+FIND_INSULT(CTX, X, Y) # Find the greatest insult from X to Y given the input CTX.
+FIND_INTENT(CTX, X) # Find the intent or purpose of X given the input CTX.
+FIND_INTEREST(CTX, X) # Find the reasons or factors that make people interested in X given the input CTX.
+FIND_INTERESTS(CTX, X) # Find the interests of X given the input CTX.
+FIND_INTERNAL_CONFLICT(CTX, X) # Find the internal conflict or dilemma faced by X given the input CTX.
+FIND_IRONY(CTX, X, Y) # Find the irony between X and Y given the input CTX.
+FIND_JOB_RELATIONSHIP(CTX, X, Y) # Find the relationship between X and Y in terms of their jobs given the input CTX.
+FIND_JUSTIFICATION(CTX, X) # Find the justification or rationale for X given the input CTX.
+FIND_KNOWLEDGE(CTX, X, Y) # Find if X knows about Y given the input CTX.
+FIND_LEAST_ANNOYED(CTX, X) # Find the person who seemed to get the least annoyed in the context of X.
+FIND_LEAST_APPRECIATED(CTX, X, Y) # Find the least appreciated aspect of X's techniques by Y in the input CTX.
+FIND_LEAST_DESCRIBING_WORD(CTX, X) # Find the word that least describes X in the given input CTX.
+FIND_LEAST_FAVORABLE(CTX, X, Y) # Find the person or entity that X would least want to hear speak at their meeting, given the input CTX.
+FIND_LEAST_KNOWLEDGE(CTX, X) # Find the person who seems to know the least about X given the input CTX.
+FIND_LEAST_LIKELY(CTX, X) # Find the least likely thing related to X given the input CTX.
+FIND_LEAST_LOVABLE(CTX, X) # Find the least lovable character in
+FIND_MORAL(CTX) # Find the intended lesson or moral of the input CTX.
+FIND_RELATION(CTX, X, Y) # Find the relation, comparison, contrast, or connection between X and Y given the input CTX.
+FIND(CTX, X, Y) # Find and list aspects such as abilities, actions, adjectives, agreements, allusions, alternatives, analogies, assets, attitudes, author's feelings, views, or stance, or absence of X in relation to Y given the input CTX.
+IDENTIFY_ELEMENT(CTX, X) # Identify the element X in the input CTX. This function can cover audience genre, character device, and least describing.
+INFER(CTX, X) # Infer information, cause, or implications about X given the input CTX.
+INTERPRET(CTX, X) # Interpret the meaning, feelings, or symbolism of X given the input CTX.
+PARAPHRASE_SIMPLIFY(CTX, X) # Provide a paraphrase or simplified explanation of X given the input CTX.
+PREDICT(CTX, X) # Predict the likelihood of X happening based on the information provided in the input CTX.
+SUMMARIZE_X(CTX, X) # Provides a summary about X given the provided input CTX.
+SUMMARIZE(CTX) # Provides a general summary about the given CTX.
+* Note: The output of each action can be the input to other actions.
+
+[Instructions]
+Suppose you are given a question about an article, as well as a list of potential actions (shown below) that you can execute to solve the question . You can imagine the actions as functions in a program, where you have input arguments, as well as output. The output of an action can be fed as input to another action. Please present a sequence of actions that you would use to answer the question after you read the article. The sequence of actions should be specific and cover all the details about the question. Please prioritize using the actions presented in the list above. If you need to add new actions, please follow the format below. Please assign the output of each action with a distinct name, which can be passed into other actions as argument. Think twice before you provide your answer. Make sure your answer is valid, clear, and easy to understand. Keep the answer simple and remove any unnecessary steps. Do not use list comprehension or dictionary comprehension. Keep each action minimally simple. If a question is unanswerable (e.g., requires options), collect as much information as possible from the input such that it will be answerable when provided with options. Your answer should follow the format: 
+```
+New actions:
+- new_action_1(arguments) : [one-sentence general explanation] or "-None" if there no need to add new actions
+- new_action_2(arguments) : [one-sentence general explanation] or "-None" if there no need to add new actions
+
+1. output_1 = action_1(here goes arguments) : [one-sentence explanation]
+2. output_2 = action_2(here goes arguments) : [one-sentence explanation]
+...
+```
+
+The following are a few examples.
+
+---
+Question: "Why did the author write the article?"
+Answer:
+New actions:
+- None
+
+1. theme = IDENTIFY_ELEMENT(CTX, "theme") : Identify the central theme of the article
+2. moral = FIND_MORAL(CTX) : Identify the moral or the intended lesson from the input article
+3. tone = IDENTIFY_ELEMENT(CTX, "tone") : Identify the author's tone in this article
+4. target_audience = IDENTIFY_ELEMENT(CTX, "target audience") : Identify the target audience of the input text
+5. ans = CONCAT(theme, moral, tone, target_audience) : Combine the theme, moral, tone and target audience to form the final answer
+
+---
+Question: "How many times has Critten been a Nilly?"
+Answer:
+New actions:
+- FIND_ALL_ISSUES(CTX, X) : Find and summarize all the events where X occurs in the input article
+- COUNT_X(CTX, X) : Count the number of times that X occurs in the input article
+
+1. all_nilly = FIND_ALL_ISSUES(CTX, "Critten been a Nilly") : Find and summarize all the events where Critten has been a Nilly. 
+2. num_nilly = COUNT_X(CTX, all_nilly) : Count the number of times that Critten has been a Nilly given the summarized events above.
+
+---
+Question: "Of the following options, which seems to be Tremaine's biggest asset in his investigation?"
+Answer:
+New actions:
+- SORT(CTX, X): Sort the elements in X in ascending order with concise reasons, based on the input article
+
+1. tremaine = IDENTIFY_ELEMENT(CTX, "Tremaine") : Identify who Tremaine is in the input article
+2. tremaine_asset = FIND_ELEMENT(CTX, "asset", tremaine) : Find and list all the assets of Tremaine in his investigation in the input article
+3. ans = SORT(CTX, tremaine_asset) : Sort the assets of Tremaine in ascending order based on the input article, the last one should be the biggest asset
+
+---
+Question: "Which word doesn't describe the security guard?"
+Answer:
+New actions:
+- None
+
+1. security_guard = FIND_CHARACTER(CTX, "security guard") : Find and summarize the character traits of the security guard in the input article
+2. word = FIND(CTX, "word", "security guard") : Find the words that describe the security guard in the input article
+3. ans = CONCAT(security_guard, word) : Combine the character traits and the words that describe the security guard to form the final answer
+
+
+Now you are given a question about an article:
+    {question}
+Please provide a plan (sequence of actions) that can arrive to the answer after reading the article. As the corresponding options are not provided for the question, when the question is not answerable without the options, simply collect as much information as possible from the input such that it will be answerable with the options.
+
+[Answer]

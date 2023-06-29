@@ -1,0 +1,13 @@
+qid,plan,open-answer,map-answer,gold
+33,"New actions:
+- None
+
+1. ro_mother = FIND_RELATION(CTX, ""Ro"", ""mother"") : Find and summarize the relationship between Ro and his mother in the input article
+2. ro_mother_event = FIND_EVENT(CTX, ""Ro's mother"") : Find and summarize all the events involving Ro's mother in the input article
+3. ans = CONCAT(ro_mother, ro_mother_event) : Combine the relationship and events involving Ro's mother to form the final answer","In the input article, Ro is a young Martian who has returned to his home planet after exploring the north. His mother is mentioned briefly when Ro recalls her warning about the Oan, the rat men who inhabit the cliffs: ""The rat men have eyes to cut the night."" This memory of his mother's voice indicates that she played a role in teaching Ro about the dangers of their world and how to survive in it. The relationship between Ro and his mother seems to be one of a caring and protective parent who imparts wisdom and knowledge to her child.
+
+There is only one mention of Ro's mother in the story, and it is not a direct event but rather a memory that Ro recalls. Ro remembers his mother's warning about the Oan, saying, ""The rat men have eyes to cut the night."" This memory serves as a reminder for Ro to be cautious and vigilant while navigating the dangerous terrain and dealing with the Oan.
+
+
+
+",D,D

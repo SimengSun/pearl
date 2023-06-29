@@ -1,0 +1,160 @@
+[Actions]
+{action_list}
+* Note: The output of each action can be the input to other actions.
+
+[Instructions]
+Suppose you are given a question about an article, as well as a list of potential actions (shown above) that you can execute to solve the question . You can imagine the actions as functions in a program, where you have input arguments, as well as output. The output of an action can be fed as input to another action. Please present a sequence of actions that you would use to answer the question after you read the article. The sequence of actions should be specific and cover all the details about the question. Please prioritize using the actions presented in the list above. If you need to add new actions, please follow the format below. Please assign the output of each action with a distinct name, which can be passed into other actions as argument. Think twice before you provide your answer. Make sure your answer is valid, clear, and easy to understand. Keep the answer simple and remove any unnecessary steps. Do not use list comprehension or dictionary comprehension. Keep each action minimally simple. If a question is unanswerable (e.g., requires options), collect as much information as possible from the input such that it will be answerable when provided with options. Your answer should follow the format: 
+```
+New actions:
+- new_action_1(arguments) : [one-sentence general explanation] or "-None" if there no need to add new actions
+- new_action_2(arguments) : [one-sentence general explanation] or "-None" if there no need to add new actions
+
+1. output_1 = action_1(here goes arguments) : [one-sentence explanation]
+2. output_2 = action_2(here goes arguments) : [one-sentence explanation]
+...
+```
+
+The following are a few examples
+
+Question: "Why is Si retirement so significant to the Space Exploration Team?"
+Answer:
+New actions:
+- None
+
+1. retire_reason = FIND_ELEMENT(CTX, "cause", "Si retirement") : Find and summarize the cause or reason of Si retirement from the input article
+2. retire_outcome = FIND_IMPACTS(CTX, "Si retirement") : Find and summarize the impact or outcome or consequences of Si retirement from the input article
+3. connect_reason = FIND_RELATION(CTX, retire_reason, "Space Exploration Team") : Find and summarize how the reason of Si retirement is related to the Space Exploration Team from the input article
+4. connect_outcome = FIND_RELATION(CTX, retire_outcome, "Space Exploration Team") : Find and summarize how the outcome of Si retirement is related to the Space Exploration Team from the input article
+5. ans = CONCAT(connect_reason, connect_outcome) : Combine the previous two steps to form the final answer
+
+
+---
+Question: "What is the “space cafard” that Si describes?"
+Answer:
+New actions:
+- None
+
+1. space_cafard = FIND_ELEMENT(CTX, "Si's description", "space cafard") : Find and summarize all relevant information about the "space cafard" that Si describes from the input 
+2. space_cafard_cmprh = COMPREHEND(CTX, space_cafard) : Provide a comprehension about the "space cafard" that Si describes from the input
+3. ans = CONCAT(space_cafard, space_cafard_cmprh) : Combine to form the final answer
+
+
+---
+Question: "How does Johnson trick the duo into paying for things more than once?"
+Answer:
+New actions:
+- None
+
+1. trick_events = FIND_EVENT(CTX, "Johnson tricks the duo") : Find and summarize all the events where Johnson tricks the duo. Provide detailed descriptions about these events.
+2. pay_events = FIND_EVENT(CTX, "the duo pay for things") : Find and summarize all the events where the duo pay for things. Provide detailed descriptions about these events.
+3. trick_pay = FIND_RELATION(CTX, trick_events, pay_events) : Find and summarize the connection between Johson tricking the duo and the duo paying for things. 
+4. trick_pay_events = CONCAT(trick_events, pay_events) : Concatenate trick and pay events
+5. trick_methods = FIND_ELEMENT(CTX, trick_pay_events, "trick method") : Find and summarize how Johnson trick the duo into paying for things more than once.
+6. ans = CONCAT(trick_pay, trick_methods) : Combine trick_pay and trick_methods to form the final answer
+
+
+---
+Question: "Why did the author write the article?"
+Answer:
+New actions:
+- None
+
+1. theme = IDENTIFY_ELEMENT(CTX, "theme") : Identify the central theme of the article
+2. moral = FIND_MORAL(CTX) : Identify the moral or the intended lesson from the input article
+3. tone = IDENTIFY_ELEMENT(CTX, "tone") : Identify the author's tone in this article
+4. target_audience = IDENTIFY_ELEMENT(CTX, "target audience") : Identify the target audience of the input text
+5. ans = CONCAT(theme, moral, tone, target_audience) : Combine the theme, moral, tone and target audience to form the final answer
+
+
+---
+Question: "How many times has Critten been a Nilly?"
+Answer:
+New actions:
+- FIND_ALL_ISSUES(CTX, X) : Find and summarize all the events where X occurs in the input article
+- COUNT_X(CTX, X) : Count the number of times that X occurs in the input article
+
+1. all_nilly = FIND_ALL_ISSUES(CTX, "Critten been a Nilly") : Find and summarize all the events where Critten has been a Nilly. 
+2. num_nilly = COUNT_X(CTX, all_nilly) : Count the number of times that Critten has been a Nilly given the summarized events above.
+
+
+---
+Question: "Arvid 6 and Tendal 13 can perform all of the following abilities EXCEPT:"
+Answer:
+New actions:
+- None
+
+1. aravid_6 = IDENTIFY_ELEMENT(CTX, "Arvid 6") : Identify what Arvid 6 means in the input article
+2. tendal_13 = IDENTIFY_ELEMENT(CTX, "Tendal 13") : Identify what Tendal 13 means in the input article
+3. aravid_6_abilities = FIND_ELEMENT(CTX, "abilities", aravid_6) : Find and summarize all the abilities of Arvid 6
+4. tendal_13_abilities = FIND_ELEMENT(CTX, "abilities", tendal_13) : Find and summarize all the abilities of Tendal 13
+5. ans = CONCAT(aravid_6_abilities, tendal_13_abilities) : Combine the abilities of Arvid 6 and Tendal 13 to form the final answer for comparing with the options
+
+
+---
+Question: "The purpose for the narrator losing his memory is. . ."
+Answer:
+New actions:
+- None
+
+1. narrator = IDENTIFY_CHARACTER(CTX, "narrator") : Identify who the narrator is in the input article
+2. narrator_memory = FIND_ELEMENT(CTX, "memory loss", narrator) : Find and summarize all the events where the narrator loses his memory
+3. narrator_purpose = FIND_ELEMENT(CTX, "purpose", narrator_memory) : Find and summarize the purpose or reason of the narrator losing his memory
+4. ans = CONCAT(narrator_memory, narrator_purpose) : Combine the memory loss and the purpose of the narrator losing his memory to form the final answer
+
+
+---
+Question: "Out of the choices below, predict which future career Eddie would most likely pick given his interests present in the article."
+Answer:
+New actions:
+- PREDICT_CAREER(CTX, X, Y) : Predict the future career given a person X's future career according to their interests or goals Y
+
+1. eddie = IDENTIFY_ELEMENT(CTX, "Eddie") : Identify who Eddie is in the input article
+2. eddie_interests = FIND_ELEMENT(CTX, "interests", eddie) : Find and summarize all the interests of Eddie
+3. eddie_goals = FIND_INTENT(CTX, eddie) : Find and summarize the intent/purpose/goal of Eddie in the input article
+4. eddie_career_by_interests = PREDICT_CAREER(CTX, "Eddie", eddie_interests) : Predict the future career of Eddie given his interests
+5. eddie_career_by_goals = PREDICT_CAREER(CTX, "Eddie", eddie_goals) : Predict the future career of Eddie given his goals
+6. ans = CONCAT(eddie_career_by_interests, eddie_career_by_goals) : Combine the predicted careers of Eddie given his interests and goals to form the final answer
+
+
+---
+Question: "Is it likely for William to have a normal life in the future?"
+Answer:
+New actions:
+- EVALUATE_PROBABILITY(CTX, X, Y) : Evaluate the probability of X happening given the summarized events Y in the input article
+
+1. william = IDENTIFY_ELEMENT(CTX, "William") : Identify who William is in the input article
+2. william_life = FIND_ELEMENT(CTX, "life", william) : Find and summarize all the events regarding William's life based on the input article
+3. william_future_normal_life = FIND_HYPOTHETICAL(CTX, "William living a normal life") :  Describe the likely situation where William lives a normal life in the future based on his current life events in the article
+4. normality = EVALUATE_PROBABILITY(CTX, william_future_normal_life, william_life) : Evaluate the probability of William living a normal life in the future given his current life events
+5. ans = CONCAT(william, normality) : Combine William and the probability of him living a normal life in the future to form the final answer
+
+
+---
+Question: "Which word doesn't describe the security guard?"
+Answer:
+New actions:
+- None
+
+1. security_guard = FIND_CHARACTER(CTX, "security guard") : Find and summarize the character traits of the security guard in the input article
+2. word = FIND(CTX, "word", "security guard") : Find the words that describe the security guard in the input article
+3. ans = CONCAT(security_guard, word) : Combine the character traits and the words that describe the security guard to form the final answer since no options are provided yet
+
+
+---
+Question: "Of the following options, which seems to be Tremaine's biggest asset in his investigation?"
+Answer:
+New actions:
+- SORT(CTX, X): Sort the elements in X in ascending order with concise reasons, based on the input article
+
+1. tremaine = IDENTIFY_ELEMENT(CTX, "Tremaine") : Identify who Tremaine is in the input article
+2. tremaine_asset = FIND_ELEMENT(CTX, "asset", tremaine) : Find and list all the assets of Tremaine in his investigation in the input article
+3. tremaine_values = SORT(CTX, tremaine_asset) : Sort the assets of Tremaine in ascending order based on the input article, the last one should be the biggest asset
+
+
+[Question]
+Now you are given a question about an article:
+    {question}
+Please provide a plan (sequence of actions) that can arrive to the answer after reading the article. As the corresponding options are not provided for the question, when the question is not answerable without the options, simply collect as much information as possible from the input such that it will be answerable with the options. Make sure the plan you generate is valid and faithful to the question.
+
+
+[Answer]

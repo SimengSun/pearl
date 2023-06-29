@@ -1,0 +1,143 @@
+ANALYZE(CTX, X, Y) #Analyze the relationship, attitude, or feelings between X and Y, or the character, language, tone, or symbolism of X given the input CTX.
+COMPARE(CTX, X, Y, Z) #Compare X and Y in the context of Z, considering aspects such as abilities, assets, attractiveness, behavior, concerns, contributions, cultures, events, experiences, feelings, focus, intelligence, irony, nationalities, performance, praise, reactions, reviews, secretiveness, time periods, treatment, truth, or worlds given the input CTX.
+DESCRIBE(CTX, X, Y) #Provide a description of X in terms of Y, such as character, genre, or introduction given the input CTX.
+EVALUATE(CTX, X, Y) #Evaluate aspects such as feeling, outcome, performance, personalities, risk, or truth of X in relation to Y given the input CTX.
+FIND(CTX, X, Y) #Find and list aspects such as abilities, actions, adjectives, agreements, allusions, alternatives, analogies, assets, attitudes, author's feelings, views, or stance, or absence of X in relation to Y given the input CTX.
+CONCAT(S1, S2, ...) # Concatenate the given strings.
+COMPREHEND(CTX, X) #Provide a detailed comprehension of X given the input CTX.
+DEFINE(CTX, X) #Provide the definition of X given the input CTX.
+EXCEPT(CTX, LIST) #Find the item that is not mentioned in the input CTX but is present in the given LIST.
+EXPLAIN_PROCESS(CTX, X) #Provide a detailed explanation of the process X given the input CTX.
+FIND_BARRIERS_CAUSES(CTX, X) #Find and summarize the remaining barriers or causes related to X given the input CTX.
+FIND_BEHAVIOR_REASON(CTX, X) #Find the reason behind the behavior X given the input CTX.
+FIND_BENEFIT(CTX, X) #Find the direct benefit of X given the input CTX.
+FIND_BEST(CTX, X, Y) #Find the best X in the context of Y given the input CTX.
+FIND_EVENT(CTX, X) #Find the event involving X in the input CTX (e.g., betrayal, change, climax).
+FIND_CHARACTER(CTX, X) #Find and summarize the character traits, transformation, and changes of X given the input CTX.
+FIND_RELATION(CTX, X, Y) #Find the relation, comparison, contrast, or connection between X and Y given the input CTX.
+FIND_COMMON(CTX, X, Y, Z) #Find the common ground, characteristics, or commonalities between X, Y, and Z given the input CTX.
+FIND_CONFLICT_CONCERN(CTX, X, Y) #Find the conflict, concern, or disagreement between X and Y given the input CTX.
+FIND_CONDITION(CTX, X, Y) #Find the condition, outcome, or consequences related to X and Y given the input CTX.
+FIND_CONSISTENCY(CTX, X) #Determine if X is consistent throughout the input CTX.
+FIND_DETAILS(CTX) #Find all the details about a topic (e.g., contract, city-state) discussed in the input CTX.
+FIND_DIALOGUE(CTX, X, Y) #Find the dialogue between X and Y in the input CTX.
+FIND_DIFFICULTY_DANGER(CTX, X) #Find the most difficult aspect, challenge, or danger faced by X in the given input CTX.
+FIND_DECISION(CTX, X) #Find the decision, factor, or event that influenced X's decision in the input CTX.
+FIND_DESCRIPTION(CTX, X) #Find all descriptions, characteristics, or words that describe X given the input CTX.
+FIND_EMOTION(CTX, X, Y) #Find the emotion or feeling X feels towards Y given the input CTX.
+FIND_ENDING(CTX, X) #Find the ending or conclusion of X's story or the input CTX.
+FIND_EVIDENCE_EXAMPLE(CTX, X) #Find evidence or an example supporting X given the input CTX.
+FIND_EXCEPTION(CTX, X, Y, Z) #Find the exception or characteristic that is not common among X, Y, and Z given the input CTX.
+FIND_EXPECTATION(CTX, X) #Find the expectation, assumption, or impact about X given the input CTX.
+FIND_EXPLANATION(CTX, X) #Find the most likely explanation, critique, or doubt for X given the input CTX.
+FIND_FACT_FALSE(CTX, X) #Find a definite fact or false statement about X given the input CTX.
+FIND_FEARS_DISTRACTIONS(CTX, X) #Find the fears, concerns, or distractions of X given the input CTX.
+FIND_FEATURES(CTX, X) #Find all the features that X cares about given the input CTX.
+FIND_FIRST_INSTANCE(CTX, X) #Find the first instance of X happening in the input CTX.
+FIND_FLAW(CTX, X) #Find the greatest flaw of X given the input CTX.
+FIND_FOCUS(CTX, X) #Find the person or object that is focused on the most in the input CTX, given a list of X.
+FIND_FORESHADOW(CTX, X, Y) #Find the instance where X foreshadows Y in the input CTX.
+FIND_FUTURE(CTX, X) #Find the future, predicted outcome, or action of X given the input CTX.
+FIND_GRIEVANCE(CTX, X) #Find and summarize the grievance X has against something or someone in the input CTX.
+FIND_HALO_EFFECT(CTX, X) #Find and summarize one halo effect of X given the input CTX.
+FIND_HUMBLENESS(CTX, X) #Find the instances of humbleness presented by X in the input CTX.
+FIND_HYPOTHETICAL(CTX, X) #Find the hypothetical outcome or consequence of X given input CTX.
+FIND_IMAGINATION(CTX, X) #Find and summarize how X imagines something in the input CTX.
+FIND_IMPACT(CTX, X, Y) #Find the event or experience that had the strongest impact on X's Y given the input CTX.
+FIND_IMPACTS(CTX, X) #Find and summarize all the impacts of X given the input CTX.
+FIND_IMPLICATIONS(CTX, X) #Find the potentially negative implications of X given the input CTX.
+FIND_IMPLICIT_PROMISE(CTX, X, Y) #Find the promise made by X to Y without explicitly stating it in the input CTX.
+FIND_IMPORTANCE(CTX, X, Y) #Find the importance of X in relation to Y given the input CTX.
+FIND_IMPRESSION(CTX, X, Y) #Find the impression X has about Y given the input CTX.
+FIND_IMPROVEMENT(CTX, X) #Find the suggested improvement for X given the input CTX.
+FIND_INCORRECT(CTX, X) #Find the incorrect information about X given the input CTX.
+FIND_INDICATION(CTX, X, Y) #Find any indications in the input CTX that X would lead to Y.
+FIND_INDICATORS(CTX, X) #Find all indicators related to X in the input CTX.
+FIND_INSTANCE(CTX, X, Y) #Find the instance in the input CTX where X does Y.
+FIND_INSULT(CTX, X, Y) #Find the greatest insult from X to Y given the input CTX.
+FIND_INTENT(CTX, X) #Find the intent or purpose of X given the input CTX.
+FIND_INTEREST(CTX, X) #Find the reasons or factors that make people interested in X given the input CTX.
+FIND_INTERESTS(CTX, X) #Find the interests of X given the input CTX.
+FIND_INTERNAL_CONFLICT(CTX, X) #Find the internal conflict or dilemma faced by X given the input CTX.
+FIND_IRONY(CTX, X, Y) #Find the irony between X and Y given the input CTX.
+FIND_JOB_RELATIONSHIP(CTX, X, Y) #Find the relationship between X and Y in terms of their jobs given the input CTX.
+FIND_JUSTIFICATION(CTX, X) #Find the justification or rationale for X given the input CTX.
+FIND_KNOWLEDGE(CTX, X, Y) #Find if X knows about Y given the input CTX.
+FIND_LEAST_ANNOYED(CTX, X) #Find the person who seemed to get the least annoyed in the context of X.
+FIND_LEAST_APPRECIATED(CTX, X, Y) #Find the least appreciated aspect of X's techniques by Y in the input CTX.
+FIND_LEAST_DESCRIBING_WORD(CTX, X) #Find the word that least describes X in the given input CTX.
+FIND_LEAST_FAVORABLE(CTX, X, Y) #Find the person or entity that X would least want to hear speak at their meeting, given the input CTX.
+FIND_LEAST_KNOWLEDGE(CTX, X) #Find the person who seems to know the least about X given the input CTX.
+FIND_LEAST_LIKELY(CTX, X) #Find the least likely thing related to X given the input CTX.
+FIND_LEAST_LOVABLE(CTX, X) #Find the least lovable character in X given the input CTX.
+FIND_LEAST_TO_HIDE(CTX) #Find the character who seems to have the least to hide in the input CTX.
+FIND_LESSON(CTX, X) #Find the lesson or takeaway that X learned from the input CTX.
+FIND_LIKELY_TRUE(CTX, X) #Find the information that is likely true about X given the input CTX.
+FIND_LIMIT(CTX, X) #Find the limit or restriction of X given the input CTX.
+FIND_MESSAGE(CTX, X, Y) #Find the message X wants to communicate about Y given the input CTX.
+FIND_METHOD(CTX, X, Y) #Find the method or technique used by X to achieve Y in the input CTX.
+FIND_METRICS(CTX, X) #Find all the metrics used in the experiments related to X given the input CTX.
+FIND_MISMATCH(CTX, X, Y) #Find the word in X that doesn't match the description of Y given the input CTX.
+FIND_MISSION(CTX, X) #Find the mission given to X in the input CTX.
+FIND_MISTAKE(CTX, X) #Find the ultimate mistake made by X given the input CTX.
+FIND_MOST_LIKELY(CTX, X) #Find the person or entity most likely to be associated with X given the input CTX.
+FIND_MOTIF(CTX, X) #Find the recurring theme or motif related to X in the input CTX.
+FIND_MOTIVATION(CTX, X) #Find the motivation behind X given the input CTX.
+FIND_MOTIVATIONS(CTX, X) #Find and list all the motivations of X given the input CTX.
+FIND_NATIONALITIES(CTX) #Find all the nationalities mentioned in the input CTX.
+FIND_NEGATIVE_CRITIQUE(CTX, X) #Find the negative critique about X given the input CTX.
+FIND_NEGATIVE_EFFECT(CTX, X) #Find the negative effect or harm caused by X given the input CTX.
+FIND_NEXT_EVENT(CTX, X) #Find the next event or action that will happen to X given the input CTX.
+FIND_NORMAL(CTX, X) #Find what is considered normal or not abnormal in the context of X given the input CTX.
+FIND_NOT_MENTIONED(CTX, X) #Find the item that is not mentioned in the context of X given the input CTX.
+FIND_NOT_OCCURRED(CTX, X) #Find the event or action that did not occur with X given the input CTX.
+FIND_NOT_REASON(CTX, X) #Find the information that is not a reason for X given input CTX.
+FIND_NOT_SHOWN(CTX, X) #Find what is not shown or mentioned about X in the input CTX.
+FIND_NOT_STRANGE(CTX, X) #Find what is not strange about X given the input CTX.
+FIND_NOT_SURPRISE(CTX, X, Y) #Find the information that did not surprise X about Y given the input CTX.
+FIND_NOT_X(CTX, X) #Find information about what X would not do or say given the input CTX.
+FIND_OBJECTIVE(CTX, X) #Find the main objective of X given the input CTX.
+FIND_OBSTACLES(CTX) #Find and list all the obstacles mentioned in the input CTX.
+FIND_OUTCOME(CTX, X) #Find the outcome or consequence of X given input CTX.
+FIND_OUTLIER(CTX, X) #Find the characteristics or factors that make X an outlier in the given input CTX.
+FIND_PARADOX(CTX, X) #Find the paradox related to X given the input CTX.
+FIND_PART(CTX, X, Y) #Find the part of X that is responsible for Y given the input CTX.
+FIND_PERCEPTION(CTX, X, Y) #Find the perception of X about Y given the input CTX.
+FIND_PERSONALITY_TRAITS(CTX, X) #Find the personality traits of X given the input CTX.
+FIND_PERSPECTIVE(CTX, X, Y) #Find the perspective of X towards Y given the input CTX.
+FIND_PIVOTAL_DECISION(CTX, X) #Find the pivotal decision related to X in the input CTX.
+FIND_PLAN(CTX, X) #Find the plan or strategy of X given the input CTX.
+FIND_PLAUSIBLE_EXPLANATIONS(CTX, X) #Find all plausible explanations for the behavior of X given the input CTX.
+FIND_PLOT(CTX) #Find the main plot of the story in the input CTX.
+FIND_PREDICTION(CTX, X, Y) #Find the prediction that X has about Y given the input CTX.
+FIND_PROBABLE_CAUSE(CTX, X, Y) #Find a probable cause of X given the context of Y in the input CTX.
+FIND_PROMISES(CTX) #Find all the promises made by the author in the input CTX.
+FIND_PROOF(CTX, X) #Find and summarize the real proof or evidence of X given the input CTX.
+FIND_PROTAGONIST(CTX) #Find the protagonist of the story given the input CTX.
+FIND_PURPOSE(CTX, X) #Find the purpose or intention of X given the input CTX.
+FIND_QUALITIES(CTX, X) #Find the qualities or characteristics of X given the input CTX.
+FIND_RANK(CTX, X, Y) #Find the rank of X in the context of Y given the input CTX.
+FIND_REACTION(CTX, X, Y) #
+FIND_REASONS_RECEPTION(CTX, X) #Find and summarize all the reasons for X and the reception or reaction of a particular group to X given input CTX.
+FIND_RECOMMENDATIONS(CTX) #Find all the recommendations made in the input CTX.
+FIND_RELATION(CTX, X, Y) #Find the relation, relationship, or dynamic between X and Y given the input CTX.
+FIND_REPERCUSSION_RESULTS(CTX, X) #Find the repercussions, results, or consequences of X given input CTX.
+FIND_ROLE_REPRESENTATION(CTX, X, Y) #Find the role, impact, or representation of X in the context of Y given the input CTX.
+FIND_SENTIMENT_THOUGHTS(CTX, X, Y) #Find the sentiment, thoughts, or beliefs of X towards Y given the input CTX.
+FIND_SETTING_EFFECT(CTX, X, Y) #Find the effect of the setting X on the characters and plot Y in the input CTX.
+FIND_SIGNIFICANCE(CTX, X, Y, Z) #Find the significance of X to Y and Z given the input CTX.
+FIND_SIMILARITY(CTX, X, Y) #Find and summarize the similarity between X and Y given the input CTX.
+FIND_SOLUTION_STRUGGLES(CTX, X) #Find the solution, action, or struggles faced by X given the input CTX.
+FIND_THEME_SYMBOLISM(CTX, X) #Find the theme or symbolism of X given the input CTX.
+FIND_TECH_ADVANCEMENTS(CTX) #Find and list all the technological advancements mentioned in the input CTX.
+FIND_TENSION_TONE(CTX) #Find the main source of tension and overall tone of the input CTX.
+FIND_TRAITS_VALUES(CTX, X) #Find the traits, characteristics, or values of X given the input CTX.
+FIND_UNEXPECTED_UNKNOWN(CTX, X) #Find the unexpected or unknown aspects of X given the input CTX.
+FIND_WRITING_STYLE(CTX, X) #Find and summarize the writing style of X given the input CTX.
+IDENTIFY_AUDIENCE_GENRE(CTX) #Identify the target audience and genre of the input CTX.
+IDENTIFY_CHARACTER_DEVICE(CTX, X) #Identify the character X and any literary devices used in the given input CTX.
+INFER(CTX, X) #Infer information, cause, or implications about X given the input CTX.
+INTERPRET(CTX, X) #Interpret the meaning, feelings, or symbolism of X given the input CTX.
+LEAST_DESCRIBING(CTX, X, adjectives) #Find the adjective that least describes X given the input CTX and a list of adjectives.
+PARAPHRASE_SIMPLIFY(CTX, X) #Provide a paraphrase or simplified explanation of X given the input CTX.
+PREDICT(CTX, X) #Predict the likelihood of X happening based on the information provided in the input CTX.

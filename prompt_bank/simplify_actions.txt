@@ -1,0 +1,14 @@
+You are given a list of functions as well as their corresponding explanations. Please reduce the list by merging the functions that have the same or similar functionalities, abstract over-specific functions with unified functions. Please reduce the list by at least half.
+
+For instance, "FIND_IMPLICATION(CTX, X)" "FIND_IMPLICATIONS(CTX, X)" can be merged to a single one function as they are essentially the same. 
+
+For another instance, "FIND_NOT_DESCRIBE(CTX, X)" is redundant because you can always use "FIND_DESCRIPTIONS(CTX, X)" and then infer the "NOT_DESCRIBE" from the descriptions returned by "FIND_DESCRIPTIONS(CTX, X)". In general, any function that contains "NOT" in the function name can be removed if there is a corresponding function that can be negated.
+
+"FIND_RELATION(CTX, X, Y)" and "FIND_RELATIONSHIP(CTX, X, Y)" and "COMPARE_RELATIONSHIP(CTX, X, Y)" can all be merged to one function.
+
+Given the above examples, please reduce the following list to at most one third of its current length. Please also include the definition of each function.
+
+Actions:
+{action_list}
+
+Reduced actions:

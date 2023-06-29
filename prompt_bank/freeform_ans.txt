@@ -1,0 +1,11 @@
+Article
+
+{article}
+
+End of Article
+
+
+Question: {question}
+
+Answer:
+(Please provide a detailed explanation for answering the question above.) 

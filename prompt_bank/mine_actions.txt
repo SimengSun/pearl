@@ -1,0 +1,61 @@
+[Actions]
+- CONCAT(S1, S2, ...) : Concatenate the input S1, S2, ...
+- EXTRACT(CTX, X) : Extract the exact wording that X is referring to from input CTX.
+- FIND_X(CTX, X): Find and summarize all relevant information about X in the input CTX. 
+- FIND_REASON(CTX, X): Find and summarize the cause or reason of X given input CTX.
+- FIND_MORAL(CTX) : Find the intended lesson or moral of the input CTX.
+- SUMMARIZE(CTX): Provides a general summary about the given CTX.
+- SUMMARIZE_X(CTX, X) : Provides a summary about X given the provided input CTX.
+
+
+[Instructions]
+Suppose you are given a question about an article, as well as a list of actions that you can execute to solve the question (shown below). You can imagine the actions as functions in a program, where you have input arguments, as well as output. The output of an action can be fed as input to another action. The output of the final action will be the answer to the given question. Suppose you haven't read the article yet, please present a sequence of actions that you would use to answer the question. 
+
+Here are a few examples:
+```
+Question:
+What is the “space cafard” that Si describes?
+
+My new actions:
+- COMPREHEND(CTX, X) : Provide a detailed comprehension of X given the input CTX.
+
+My sequence of actions:
+1. snippet = EXTRACT(CTX, "space cafard") : Extract the exact wording regarding "space cafard" from the input CTX.
+2. ans = COMPREHEND(CTX, X) : Provide a detailed comprehension of the input X given the input CTX.
+```
+
+```
+Question:
+Why did the author write the article?
+
+My new actions:
+- None
+
+My sequence of actions:
+1. moral = FIND_MORAL(CTX) : Find the intended lesson or moral of the input CTX.
+```
+
+Your answer must follow the following rules:
+1. The present sequence should be minimal, i.e., no unnecessary actions. 
+2. The sequence of actions should be specific and cover every detail about the question. 
+3. The sequence of actions should use as many as existing actions as possible.
+4. It is fine to create new actions, however, the created new actions should be *maximally reusable and generalizable* to other reading comprehension questions.  
+5. The arguments should cover all the details of the given question.
+
+[Question]
+{{question}}
+
+[Answer]
+Now please provide the plan for the above question.
+Your answer should follow the format: 
+```
+My new actions (if any):
+- my_new_action_1(here goes the arguments) : [one-sentence explanation]
+- my_new_action_2(here goes the arguments) : [one-sentence explanation]
+...
+
+My sequence of actions:
+1. output_1 = action_1(here goes the arguments) : [one-sentence explanation]
+2. output_2 = action_2(here goes the arguments) : [one-sentence explanation]
+...
+```
